@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* menú */
+.message-top {
+    background-color: #e19b88;
+}
+
+header {
+    padding: 10px;
+}
+
+#boton {
+    color: #e19b88;
+    background-color: #e19b88;
+    border-color: beige;
+}
+
+#menu li>a {
+    font-size: 18px;
+    color: #3f3f3f;
+
+}
+
+.carousel-inner {
+    max-height: 39rem;
+}
+
+#intro span {
+    color: #e19b88;
+    font-weight: bold;
+}
+
+#nosotros h1 {
+    color: #e19b88;
+    font-weight: bold;
+}
+
+#nosotros img {
+    width: 300px;
+    height: 300px;
+}
+
+#sucursales h1 {
+    color: #e19b88;
+    font-weight: bold;
+}
+
+#sucursales img {
+    width: 200px;
+    height: auto;
+}
+
+#salas h1 {
+    color: #e19b88;
+    font-weight: bold;
+}
+
+/*  MEDIA QUERIES PANTALLA ACNHA */
+/*  MEDIA QUERIES PANTALLA SM */
+/*  MEDIA QUERIES PANTALLA PEQUEÑA */
+@media (max-width:768px) {
+    #intro {
+        width: 90% !important;
+    }
+
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+
+    }
+}
+
+/*  MEDIA QUERIES PANTALLA SUPER PEQUEÑA */
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}

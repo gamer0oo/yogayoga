@@ -1,19 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos_main.css">
-    <title>Yoyayoga</title>
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/LOGOMIN.svg">
+    <title>YOGA YOGA</title>
 </head>
+
 <body>
-    <h1 class="titulo">Yoga Yoga</h1>
-    <hr>
-    <div class="parrafo">
-        <h2>olaola</h2>
-        <h5>EJOOOOOOO</h5>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis excepturi repellendus a dignissimos similique molestiae iusto at omnis enim delectus modi, consequuntur, nemo deserunt harum incidunt repudiandae perferendis quidem veritatis?</p>
+    <!-- ENCABEZADO -->
+    <header class="fixed-top bg-white">
+        <div>
+            <div class="text-center">
+                <img src="assets/img/LOGO.svg" alt="logo yoga yoga" width="120px" height="auto">
+            </div>
+        </div>
+
+
+
+        <nav class="navbar navbar-expand-lg bg-white" id="menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler btn btn-outline" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" id="boton">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Yoga Inicial</a></li>
+                                <li><a class="dropdown-item" href="#">Hatha Yoga</a></li>
+                                <li><a class="dropdown-item" href="#">Iniciación a Ashtanga</a></li>
+                                <li><a class="dropdown-item" href="#">Yoga al despertar</a></li>
+                                <li><a class="dropdown-item" href="#">Yoga Online</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#sucursales" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sucursales
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">1</a></li>
+                                <li><a class="dropdown-item" href="#">2</a></li>
+                                <li><a class="dropdown-item" href="#">3</a></li>>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- CARRUSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="assets/img/carrusel1.jpg" class="d-block w-100" alt="Sucursal1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/carrusel2.jpg" class="d-block w-100" alt="Sucursal2">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/carrusel3.jpg" class="d-block w-100" alt="Sucursal3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1 class="pt-3 fs-2 border-top border-3"> Bienvenidos a <span> Yoga Yoga</span></h1>
+        <p class="p-3 fs-4">En esta agencia aprenderas sobre la disciplina milenaria que te
+            ayudará a mejorar tu salud física y emocional, aumentar tu flexibilidad y fortaleza, y encontrar un
+            equilibrio entre cuerpo y mente.
+            aprender todo sobre yoga</p>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="w-auto mx-auto text-center pt-5" id="nosotros">
+        <h1 class="text-center pt-3 fs-1">NOSOTROS</h1>
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="card border-0">
+                        <img class="card-img-top mx-auto d-block img-fluid" src="assets/img/equipo2.png" alt="Imagen 1">
+                        <div class="card-body text-center">
+                            <p class="card-text fs-4">Mariano Leal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card border-0">
+                        <img class="card-img-top mx-auto d-block img-fluid" src="assets/img/equipo1.jpg" alt="Imagen 2">
+                        <div class="card-body text-center">
+                            <p class="card-text fs-4">Alejandro Peñailillo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card border-0">
+                        <img class="card-img-top mx-auto d-block img-fluid" src="assets/img/equipo3.png" alt="Imagen 3">
+                        <div class="card-body text-center">
+                            <p class="card-text fs-4">Steffi Ryser</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCURSALES -->
+    <section id="sucursales">
+        <h1 class="text-center pt-3 fs-1">SUCURSALES</h1>
+        <div id="carouselExampleIndicators" class="carousel slide p-5 w-75 mx-auto" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="d-block w-100" src="assets/img/1.jpeg" alt="Imagen 1" width="100px"
+                                height="auto">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="d-block w-100" src="assets/img/2.jpeg" alt="Imagen 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="d-block w-100" src="assets/img/3.jpeg" alt="Imagen 1">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="d-block w-100" src="assets/img/4.jpeg" alt="Imagen 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="d-block w-100" src="assets/img/5.jpeg" alt="Imagen 1">
+                        </div>
+                        <div class="col-md-6">
+                            <img class="d-block w-100" src="assets/img/4.jpeg" alt="Imagen 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- SALAS Y ZONAS -->
+    <section class="pt-3 fs-2" id="salas">
+        <h1 class="text-center pt-3 fs-1">SALAS</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img src="assets/img/sala1.jpeg" class="card-img-top" alt="Imagen 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sala Yoga </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img src="assets/img/sala2.jpeg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title ">Sala Pilates</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img src="assets/img/sala3.jpeg" class="card-img-top" alt="Imagen 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sala Yoga </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img src="assets/img/sala4.jpeg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sala Pilates</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
