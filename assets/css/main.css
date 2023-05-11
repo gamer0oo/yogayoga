@@ -58,6 +58,19 @@ header {
     font-weight: bold;
 }
 
+footer {
+    background-color: #f8cfc4;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+}
+
+footer svg {
+    color: #e19b88;
+}
+
 /*  MEDIA QUERIES PANTALLA ACNHA */
 /*  MEDIA QUERIES PANTALLA SM */
 /*  MEDIA QUERIES PANTALLA PEQUEÑA */
