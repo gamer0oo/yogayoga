@@ -3,6 +3,17 @@ body {
     overflow-x: hidden;
 }
 
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    margin-top: 150px;
+}
+
 /* menú */
 .message-top {
     background-color: #e19b88;
@@ -58,6 +69,11 @@ header {
     font-weight: bold;
 }
 
+.modal img {
+    height: 465px;
+    width: auto;
+}
+
 footer {
     background-color: #f8cfc4;
 }
@@ -69,6 +85,7 @@ footer img {
 
 footer svg {
     color: #e19b88;
+    height: 50px;
 }
 
 /*  MEDIA QUERIES PANTALLA ACNHA */
