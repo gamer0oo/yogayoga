@@ -1,0 +1,26 @@
+.color-titulo {
+    color: antiquewhite;
+}
+
+.color-fondo-titulo {
+    background-color: rgb(20, 20, 157);
+}
+
+#error,
+#error2,
+#error3,
+#error4,
+#error5,
+#error6,
+#error7,
+#error8 {
+    color: red;
+    display: none;
+    font-size: 10px;
+}
+
+#error9 {
+    color: red;
+    display: none;
+    font-size: 10px;
+}
