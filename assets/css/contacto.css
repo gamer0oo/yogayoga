@@ -28,3 +28,26 @@ main {
     display: none;
     font-size: 10px;
 }
+
+#enviar {
+    background-color: #e19b88;
+    border-color: #e19b88;
+    color: #ffffff;
+}
+
+h2 {
+    color: #e19b88;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #e19b88;
+}

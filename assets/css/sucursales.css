@@ -11,3 +11,31 @@
 #modal li {
     list-style: none;
 }
+
+#modal button {
+    background: #e19b88;
+    color: #ffffff;
+}
+
+#text span {
+    color: #e19b88;
+}
+
+.card h5 {
+    color: #e19b88
+}
+
+#card-img {
+    height: auto;
+    width: 400x;
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+}
+
+#suc button {
+    background-color: #e19b88;
+    color: #ffffff;
+}

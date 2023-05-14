@@ -71,162 +71,193 @@
     </div>
     <main>
         <section>
-            <div class="container-fluid text-center">
-                <h1>SUCURSALES</h1>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h3>Conoce nuestras sucursales</h3>
+            <div class="text-center" id="text">
+                <h3>Conoce nuestras <span>Sucursales</span></h3>
                 <p>En Yoga Yoga contamos con 5 sucursales a lo largo de Santiago, ¿Quieres saber más detalles? Haz click
-                    en la
+                    en ver más información de la
                     sucursal a la que quieres asistir y resuelve tus dudas.</p>
             </div>
         </section>
-        <section id="modal">
-            <div class="container-fluid">
-                <ul>
-                    <div>
-                        <a data-bs-toggle="modal" data-bs-target="#sucSanJoa" href=" #sucSanJoa">
-                            <li> Sucursal San Joaquín</li>
-                        </a>
-                        <div class="modal fade" id="sucSanJoa" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sucursal San Joaquín</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="assets/img/5.jpeg" alt="SUCURSAL SAN JOAQUIN">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button id="btn-modal" type="button" class="btn"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                    </div>
+        <section>
+            <div class="container" id="suc">
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/5.jpeg" alt="Imagen Sucursal" id="card-img" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title"> San Joaquín</h5>
+                                <div class="d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                    <p class="card-text"> Av. Vicuña Mackenna 4917, San Joaquín
+                                    </p>
                                 </div>
+                                <p>- Sucursal Central</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sucSanJoa"
+                                    href=" #sucSanJoa">Más
+                                    Información</button>
                             </div>
                         </div>
                     </div>
-                </ul>
-            </div>
-            <div class="container-fluid">
-                <ul>
-                    <div>
-                        <a data-bs-toggle="modal" data-bs-target="#sucFlor" href=" #sucFlor">
-                            <li> Sucursal La Florida</li>
-                        </a>
-                        <div class="modal fade" id="sucFlor" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sucursal La Florida</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="assets/img/1.jpeg" alt="SUCURSAL SAN JOAQUIN">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/1.jpeg" alt="Imagen Sucursal" id="card-img" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title">La Florida</h5>
+                                <p class="card-text"> Froilán Roa 7107, La Florida</p>
+                                <p class="card-text text-danger ">¡Nueva!</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sucLaFlor"
+                                    href=" #sucLaFlor">Más
+                                    Información</button>
                             </div>
                         </div>
                     </div>
-                </ul>
-            </div>
-            <div class="container-fluid">
-                <ul>
-                    <div>
-                        <a data-bs-toggle="modal" data-bs-target="#sucMacul" href=" #sucMacul">
-                            <li> Sucursal Macul</li>
-                        </a>
-                        <div class="modal fade" id="sucMacul" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sucursal Macul</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="assets/img/2.jpeg" alt="SUCURSAL SAN JOAQUIN">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/2.jpeg" alt="Imagen Sucursal" id="card-img" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Providencia</h5>
+                                <p class="card-text"> Antonio Varas 666, Providencia
+                                </p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sucProv"
+                                    href=" #sucProv">Más
+                                    Información</button>
                             </div>
                         </div>
                     </div>
-                </ul>
-            </div>
-            <div class="container-fluid">
-                <ul>
-                    <div>
-                        <a data-bs-toggle="modal" data-bs-target="#sucMaipu" href=" #sucMaipu">
-                            <li> Sucursal Maipú</li>
-                        </a>
-                        <div class="modal fade" id="sucMaipu" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sucursal Maipú</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="assets/img/3.jpeg" alt="SUCURSAL SAN JOAQUIN">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/3.jpeg" alt="Imagen Sucursal" id="card-img" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Maipú</h5>
+                                <p class="card-text"> Av. Esq. Blanca 501, Maipú
+                                </p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sucMaipu"
+                                    href=" #sucMaipu">Más
+                                    Información</button>
                             </div>
                         </div>
                     </div>
-                </ul>
-            </div>
-            <div class="container-fluid">
-                <ul>
-                    <div>
-                        <a data-bs-toggle="modal" data-bs-target="#sucProv" href=" #sucProv">
-                            <li> Sucursal Providencia</li>
-                        </a>
-                        <div class="modal fade" id="sucProv" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sucursal Providencia</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="assets/img/4.jpeg" alt="SUCURSAL SAN JOAQUIN">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/4.jpeg" alt="Imagen Sucursal" id="card-img" class="card-img">
+                            <div class="card-body">
+                                <h5 class="card-title">San Bernardo</h5>
+                                <p class="card-text"> Freire 862, 8071189 San Bernardo</p>
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sucSanBer"
+                                    href=" #sucSanBer">Más
+                                    Información</button>
                             </div>
                         </div>
                     </div>
-                </ul>
-            </div>
-        </section>
+                </div>
 
 
+
+                <!-- Modal -->
+                <div class="modal fade" id="sucSanJoa" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">San Joaquín</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade" id="sucLaFlor" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">La Florida</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal fade" id="sucProv" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Providencia</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4 -->
+                <div class="modal fade" id="sucMaipu" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Maipú</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4 -->
+                <div class="modal fade" id="sucSanBer" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">San Bernardo</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
     </main>
 

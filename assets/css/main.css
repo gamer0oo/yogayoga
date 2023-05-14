@@ -8,10 +8,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    margin-bottom: 100px;
 }
 
 main {
-    margin-top: 150px;
+    margin-top: 170px;
 }
 
 /* menú */
