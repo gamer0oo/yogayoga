@@ -1,0 +1,13 @@
+#btn-modal {
+    background: #e19b88;
+    color: #ffffff;
+}
+
+#modal a {
+    text-decoration: none;
+    color: black;
+}
+
+#modal li {
+    list-style: none;
+}

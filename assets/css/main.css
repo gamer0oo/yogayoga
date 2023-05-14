@@ -32,7 +32,10 @@ header {
 #menu li>a {
     font-size: 18px;
     color: #3f3f3f;
+}
 
+#menu li>a:hover {
+    color: #e19b88;
 }
 
 .carousel-inner {
