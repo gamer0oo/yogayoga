@@ -3,8 +3,11 @@ main {
 }
 
 #map {
+    margin: 50px;
     width: 50%;
-    height: 50%;
+    height: 400px;
+    background-color: grey;
+    left: 270px;
 }
 
 html,
