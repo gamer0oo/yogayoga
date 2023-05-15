@@ -3,12 +3,17 @@ main {
 }
 
 #map {
-    margin: 50px;
+    width: 100%;
+    height: 50vh;
+
+    /* margin: 50px;
     width: 50%;
     height: 400px;
     background-color: grey;
-    left: 270px;
+    left: 270px; */
 }
+
+
 
 html,
 body {
