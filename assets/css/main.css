@@ -38,6 +38,38 @@ header img {
     flex-direction: column;
 }
 
+#text {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.card-sala {
+    position: relative;
+    overflow: hidden;
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s;
+    /* From https://css.glass */
+    /* From https://css.glass */
+    background: rgba(225, 155, 136, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.info:hover {
+    opacity: 1;
+
+}
 
 footer {
     background-color: #f8cfc4;
@@ -70,33 +102,7 @@ footer a:hover {
     width: 100%;
 }
 
-.card-sala {
-    position: relative;
-    overflow: hidden;
-}
 
-.info {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.8s;
-    /* From https://css.glass */
-    /* From https://css.glass */
-    background: rgba(225, 155, 136, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.3px);
-    -webkit-backdrop-filter: blur(5.3px);
-    color: rgb(0, 0, 0);
-    padding: 20px;
-}
-
-.info:hover {
-    opacity: 1;
-
-}
 
 
 

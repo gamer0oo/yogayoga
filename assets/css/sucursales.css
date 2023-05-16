@@ -17,7 +17,7 @@ main {
     list-style: none;
 }
 
-#modal button {
+.modal-footer button {
     background: #e19b88;
     color: #ffffff;
 }
@@ -25,7 +25,6 @@ main {
 #text span {
     color: #e19b88;
 }
-
 
 
 .card h5 {
@@ -56,6 +55,10 @@ main {
     margin-left: 10px;
 }
 
+.modal-body span {
+    font-weight: bold;
+}
+
 
 
 /* OSCURO */
@@ -65,4 +68,8 @@ body.dark-mode .card-body {
 
 body.dark-mode .card-border {
     color: #292c30;
+}
+
+body.dark-mode .modal-content {
+    background-color: #292c30;
 }
