@@ -1,3 +1,8 @@
+/*  main */
+main {
+    margin-top: 150px;
+}
+
 #btn-modal {
     background: #e19b88;
     color: #ffffff;
@@ -21,6 +26,8 @@
     color: #e19b88;
 }
 
+
+
 .card h5 {
     color: #e19b88
 }
@@ -38,4 +45,22 @@
 #suc button {
     background-color: #e19b88;
     color: #ffffff;
+}
+
+.card i {
+    color: #e19b88;
+    margin-right: 10px;
+}
+
+#nueva {
+    margin-left: 10px;
+}
+
+/* OSCURO */
+body.dark-mode .card-body {
+    background-color: #292c30;
+}
+
+body.dark-mode .card-border {
+    color: #292c30;
 }

@@ -6,77 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-axRaZQ78/fNctv4+Q0XvV6Z5Pwkds4LbQcaiqQK2+c+U8L9bqjFpLZnUzg4nBvzq1UJNfUQPO4Jr2f5N5wuGDw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/contacto.css">
-    <link rel="stylesheet" href="assets/css/main.css">}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <link rel="icon" href="assets/img/LOGOMIN.svg">
     <title>YOGA YOGA</title>
 </head>
 
 <body>
     <!-- ENCABEZADO -->
-    <div class="fixed-top">
-        <header class="bg-white container-fluid">
-            <div>
-                <div class="text-center">
-                    <a href="index.html"><img src="assets/img/LOGO.svg" alt="logo yoga yoga" width="120px"
-                            height="auto"></a>
+    <div id="superior" class="fixed-top bg-light">
+        <header>
+            <div class="container">
+                <div class="row text-center mt-2 mb-2 d-flex justify-content-center">
+                    <div class="col-sm-4">
+                        <button id="theme-toggle" class="btn"><i class="bi bi-moon-fill"></i></button>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/img/LOGO2.svg" alt="Logo Yoga Yoga">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-end mt-3">
+                            <span id="horaFecha" class="ms-3 small"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
         <!-- NAVEGACIÓN -->
-        <nav class="navbar navbar-expand-lg bg-white" id="menu">
-            <div class="container-fluid">
-                <button class="navbar-toggler btn btn-outline" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" id="boton">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Clases
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Yoga Inicial</a></li>
-                                <li><a class="dropdown-item" href="#">Yoga Hatha</a></li>
-                                <li><a class="dropdown-item" href="#">Yoga al despertar</a></li>
-                                <li><a class="dropdown-item" href="#">Yoga Online</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sucursales.html">Sucursales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="poses.html">Poses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Clases
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Yoga Inicial</a></li>
+                            <li><a class="dropdown-item" href="#">Yoga Hatha</a></li>
+                            <li><a class="dropdown-item" href="#">Yoga al despertar</a></li>
+                            <li><a class="dropdown-item" href="#">Yoga Online</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="poses.html">Poses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </nav>
     </div>
 
     <main>
-        <div class="row">
-            <div class="col-lg-8 mb-lg-0 mb-4">
-                <div class="container d-flex">
-                    <form action="" class="border p-3 col-md-6">
+        <div class="container">
+            <div class="row">
+                <section class="col-sm-8 mb-4">
+                    <form action="" class="border p-3 col-md-10">
                         <h2>Formulario de Contacto</h2>
                         <p>¿Tienes dudas, consultas, sugerencias?
                             Rellena los campos solicitados y nos pondremos en contacto contigo.</p>
@@ -86,7 +92,8 @@
                                     <label for="rutInput" class="form-label">Rut</label>
                                     <input type="text" class="form-control" id="rutInput"
                                         placeholder="Ingrese su rut sin guion ni puntos">
-                                    <p class="error" id="error8">* Ingrese su rut sin guion y 9 caracteres almenos</p>
+                                    <p class="error" id="error8">* Ingrese su rut sin guion y 9 caracteres al menos
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +103,7 @@
                                     <label for="pswInput" class="form-label">Contraseña</label>
                                     <input type="password" class="form-control" id="pswInput"
                                         placeholder="Ingresa tu contraseña">
-                                    <p class="error" id="error6">* Debe contener almenos 5 caracteres</p>
+                                    <p class="error" id="error6">* Debe contener al menos 8 caracteres</p>
 
                                 </div>
                             </div>
@@ -165,31 +172,41 @@
                             </div>
                         </div>
 
-                        <label for="comment">Comentarios:</label>
-                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                        <label for="comentInput">Comentarios</label>
+                        <textarea class="form-control" rows="5" id="comentInput" name="text"></textarea>
+                        <span id="palabrasRestantes"></span>
+                        <p class="error" id="error10"> * Rellena el campo dispones de 100 palabras </p>
+                        <p class="error" id="error11"> * Exediste el maximo de palabras </p>
 
-                        <div class="mt-3">
-                            <button type="submit" id="enviar" class="btn btn-success">Enviar</button>
+                        <div class="mt-3 d-flex flex-column">
+                            <button type="submit" id="enviar" class="btn btn-success"
+                                onclick="validarFormulario()">Enviar</button>
                         </div>
                     </form>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <h2>Información de Contacto</h2>
-                <ul id="info-contacto">
-                    <li>
-                        <i class="bi bi-envelope-fill"></i>
-                        <a href="mailto:contacto@yogayoga.cl">contacto@yogayoga.cl</a>
-                    </li>
-                    <li>
-                        <i class="bi bi-telephone-fill"></i>
-                        <a href="tel:+56914702581">+56 9 1470 2581</a>
-                    </li>
-                    <li>
-
-                        Av. Vicuña Mackenna 4917, San Joaquín, Región Metropolitana
-                    </li>
-                </ul>
+                </section>
+                <section class="col-sm-4 mt-5 sm-2">
+                    <ul id="info-contacto">
+                        <h2>Información de Contacto</h2>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:contacto@yogayoga.cl">contacto@yogayoga.cl</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+56914702581">+56 9 1470 2581</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Av. Vicuña Mackenna 4917, San Joaquín, Región Metropolitana
+                        </li>
+                        <div class="redes">
+                            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </ul>
+                </section>
             </div>
         </div>
 
@@ -197,17 +214,35 @@
 
 
 
-    </main>
 
+
+    </main>
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">¡Éxito!</h5>
+                    <button type="button" id="cerrar" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Formulario enviado correctamente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
 </body>
-
-<script src="./js/formulario.js"></script>
+<script src="assets/js/contacto.js"></script>
+<script src="assets/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <footer>
 
 </footer>

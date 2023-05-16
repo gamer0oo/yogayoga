@@ -1,6 +1,7 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+/* MAIN */
+main {
+    margin-top: 140px;
+    margin-bottom: 50px;
 }
 
 .fixed-top {
@@ -8,74 +9,25 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    margin-bottom: 100px;
 }
 
-main {
-    margin-top: 170px;
+
+#horaFecha {
+    font-size: 1.5rem;
+    color: black;
 }
 
-/* menú */
-.message-top {
-    background-color: #e19b88;
-}
-
-header {
-    padding: 10px;
-}
-
-#boton {
-    color: #e19b88;
-    background-color: #e19b88;
-    border-color: beige;
-}
-
-#menu li>a {
-    font-size: 18px;
-    color: #3f3f3f;
-}
-
-#menu li>a:hover {
-    color: #e19b88;
-}
-
-.carousel-inner {
-    max-height: 39rem;
-}
-
-#intro span {
-    color: #e19b88;
-    font-weight: bold;
-}
-
-#nosotros h1 {
-    color: #e19b88;
-    font-weight: bold;
-}
-
-#nosotros img {
-    width: 300px;
-    height: 300px;
-}
-
-#sucursales h1 {
-    color: #e19b88;
-    font-weight: bold;
-}
-
-#sucursales img {
-    width: 200px;
+header img {
+    width: 100px;
     height: auto;
 }
 
-#salas h1 {
-    color: #e19b88;
-    font-weight: bold;
+#theme-toggle {
+    font-size: 2rem;
 }
 
-.modal img {
-    height: 465px;
-    width: auto;
+#theme-toggle i {
+    font-size: 1.5rem;
 }
 
 footer {
@@ -87,30 +39,69 @@ footer img {
     width: auto;
 }
 
-footer svg {
+footer i {
+    font-size: 1.5rem;
+    color: #fa734e;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: flex;
+    align-items: start;
+}
+
+footer a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+footer a:hover {
+    color: #fa734e;
+}
+
+/* OSCURO */
+body.dark-mode {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.dark-mode #theme-toggle i {
+    transform: rotate(180deg);
+}
+
+body.dark-mode #theme-toggle {
+    color: #fff;
+}
+
+body.dark-mode .nav-link {
+    color: #fff
+}
+
+body.dark-mode .nav-link:hover {
     color: #e19b88;
-    height: 50px;
 }
 
-/*  MEDIA QUERIES PANTALLA ACNHA */
-/*  MEDIA QUERIES PANTALLA SM */
-/*  MEDIA QUERIES PANTALLA PEQUEÑA */
-@media (max-width:768px) {
-    #intro {
-        width: 90% !important;
-    }
-
-    .servicio-fila {
-        width: 100% !important;
-        text-align: center;
-
-    }
+body.dark-mode #intro span {
+    color: #e19b88;
 }
 
-/*  MEDIA QUERIES PANTALLA SUPER PEQUEÑA */
-@media (max-width: 576px) {
-    .icono-wrap {
-        flex-wrap: wrap;
-        justify-content: center !important;
-    }
+body.dark-mode #horaFecha {
+    color: #fff;
+}
+
+
+/* CLARO */
+.nav-link {
+    color: #343a40;
+}
+
+.nav-link:hover {
+    color: #e19b88;
+}
+
+#intro span {
+    color: #e19b88;
 }

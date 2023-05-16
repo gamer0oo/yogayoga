@@ -1,15 +1,19 @@
-let rut = document.getElementById("rutInput")
+let rut = document.getElementById("rutInput");
 let nombre = document.getElementById("nameInput");
 let apellido = document.getElementById("apellInput");
 let boton = document.getElementById("enviar");
 let telefono = document.getElementById("telInput");
-let correo = document.getElementById("correoInput")
-let direccion = document.getElementById("direccInput")
-let contraseña = document.getElementById("pswInput")
-let contraseña2 = document.getElementById("psw2Input")
-let asunto = document.getElementById("asunInput")
+let correo = document.getElementById("correoInput");
+let direccion = document.getElementById("direccInput");
+let contraseña = document.getElementById("pswInput");
+let contraseña2 = document.getElementById("psw2Input");
+let asunto = document.getElementById("asunInput");
+let comentarios = document.getElementById("comentInput");
 
-boton.addEventListener("click", validarFormulario)
+let palabrasRestantes = document.getElementById("palabrasRestantes");
+let maxPalabras = 100;
+
+boton.addEventListener("click", validarFormulario);
 
 function validarFormulario(e) {
     e.preventDefault();
@@ -19,35 +23,32 @@ function validarFormulario(e) {
     if (rut.value.length < 8 || rut.value.length > 9) {
         $("#error8").css("display", "block");
         hayErrores = true;
-
     } else {
         $("#error8").css("display", "none");
     }
-    if (contraseña.value == '' || contraseña.value.length < 5) {
+
+    if (contraseña.value == "" || contraseña.value.length <= 7) {
         $("#error6").css("display", "block");
         hayErrores = true;
-
     } else {
         $("#error6").css("display", "none");
     }
+
     if (contraseña2.value !== contraseña.value) {
         $("#error7").css("display", "block");
         hayErrores = true;
-
     } else {
         $("#error7").css("display", "none");
-
     }
 
-
-    if (nombre.value == '') {
+    if (nombre.value == "") {
         $("#error").css("display", "block");
         hayErrores = true;
     } else {
         $("#error").css("display", "none");
     }
 
-    if (apellido.value == '') {
+    if (apellido.value == "") {
         $("#error2").css("display", "block");
         hayErrores = true;
     } else {
@@ -68,38 +69,60 @@ function validarFormulario(e) {
         $("#error4").css("display", "none");
     }
 
-    if (direccion.value == '') {
+    if (direccion.value == "") {
         $("#error5").css("display", "block");
         hayErrores = true;
     } else {
         $("#error5").css("display", "none");
     }
-    if (asunto.value == '') {
+
+    if (asunto.value == "") {
         $("#error9").css("display", "block");
         hayErrores = true;
     } else {
         $("#error9").css("display", "none");
     }
 
+    if (comentarios.value == "") {
+        $("#error10").css("display", "block");
+        hayErrores = true;
+    } else {
+        $("#error10").css("display", "none");
+    }
+
+    if (comentarios.value.trim().split(/\s+/).length > maxPalabras) {
+        $("#error11").css("display", "block");
+        hayErrores = true;
+    } else {
+        $("#error11").css("display", "none");
+    }
+
     if (hayErrores) {
         return;
     }
 
-    function limpiarCampos() {
-        rut.value = "";
-        contraseña.value = "";
-        contraseña2.value = "";
-        nombre.value = "";
-        apellido.value = "";
-        telefono.value = "";
-        correo.value = "";
-        direccion.value = "";
-        asunto.value = "";
-    }
-
-    alert("Formulario enviado correctamente");
     limpiarCampos();
-};
+    mostrarAlertaExito();
+}
+
+comentarios.addEventListener("input", function () {
+    let comentario = comentarios.value.trim();
+    let palabras = comentario.split(/\s+/); // Dividir el texto en palabras
+
+    palabrasRestantes.textContent = "Palabras restantes: " + (maxPalabras - palabras.length);
+
+    if (palabras.length > maxPalabras) {
+        $("#error11").css("display", "block");
+    } else {
+        $("#error11").css("display", "none");
+    }
+    if (palabras.length > maxPalabras || palabras.length < 0) {
+        palabrasRestantes.style.color = "red";
+    } else {
+        palabrasRestantes.style.color = "inherit";
+    }
+});
+
 rut.addEventListener("input", function () {
     $("#error8").css("display", "none");
 });
@@ -107,6 +130,7 @@ rut.addEventListener("input", function () {
 contraseña.addEventListener("input", function () {
     $("#error6").css("display", "none");
 });
+
 contraseña2.addEventListener("input", function () {
     $("#error9").css("display", "none");
 });
@@ -127,7 +151,6 @@ correo.addEventListener("input", function () {
     $("#error4").css("display", "none");
 });
 
-
 direccion.addEventListener("input", function () {
     $("#error5").css("display", "none");
 });
@@ -140,6 +163,35 @@ contraseña2.addEventListener("input", function () {
     $("#error7").css("display", "none");
 });
 
+comentarios.addEventListener("input", function () {
+    $("#error10").css("display", "none");
+});
+
+comentarios.addEventListener("input", function () {
+    $("#error11").css("display", "none");
+});
+
+limpiarCampos();
+
+function limpiarCampos() {
+    rut.value = "";
+    contraseña.value = "";
+    contraseña2.value = "";
+    nombre.value = "";
+    apellido.value = "";
+    telefono.value = "";
+    correo.value = "";
+    direccion.value = "";
+    asunto.value = "";
+    comentarios.value = "";
+}
+
+function mostrarAlertaExito() {
+    // Mostrar la alerta de éxito utilizando el modal de Bootstrap
+    var modal = new bootstrap.Modal(document.getElementById('successModal'));
+    modal.show();
+}
+
 function password() {
     let input = document.getElementById("password");
 
@@ -147,11 +199,10 @@ function password() {
         input.type = "text";
         document.getElementById("mostrar_pass").style.display = "none";
         document.getElementById("ocultar_pass").style.display = "inline";
-    }
-    else {
+    } else {
         input.type = "password";
         document.getElementById("mostrar_pass").style.display = "inline";
         document.getElementById("ocultar_pass").style.display = "none";
     }
-
 }
+

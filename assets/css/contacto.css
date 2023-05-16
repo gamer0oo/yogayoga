@@ -1,5 +1,5 @@
 main {
-    margin-top: 20em;
+    margin-top: 150px;
 }
 
 .color-titulo {
@@ -23,11 +23,14 @@ main {
     font-size: 10px;
 }
 
-#error9 {
+#error9,
+#error10,
+#error11 {
     color: red;
     display: none;
     font-size: 10px;
 }
+
 
 #enviar {
     background-color: #e19b88;
@@ -49,5 +52,25 @@ a {
 }
 
 a:hover {
+    color: #e19b88;
+}
+
+main i {
+    color: #e19b88;
+}
+
+.redes i {
+    font-size: 2em;
+    margin: 5px;
+}
+
+
+
+/* OSCURO */
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode a:hover {
     color: #e19b88;
 }

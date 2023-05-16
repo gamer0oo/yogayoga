@@ -1,3 +1,13 @@
 .pose img {
-    width: 300px;
+    width: 200px;
+}
+
+.poses {
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.pose {
+    text-align: center;
 }
