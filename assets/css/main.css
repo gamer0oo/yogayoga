@@ -11,7 +11,6 @@ main {
     right: 0;
 }
 
-
 #horaFecha {
     font-size: 1.5rem;
     color: black;
@@ -30,28 +29,31 @@ header img {
     font-size: 1.5rem;
 }
 
+.carousel img {
+    height: 600px;
+}
+
+#nav-footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
 footer {
     background-color: #f8cfc4;
 }
 
 footer img {
-    height: 100px;
+    height: 130px;
     width: auto;
 }
 
 footer i {
     font-size: 1.5rem;
     color: #fa734e;
+    margin-right: 15px;
 }
 
-footer ul {
-    list-style: none;
-}
-
-footer li {
-    display: flex;
-    align-items: start;
-}
 
 footer a {
     text-decoration: none;
@@ -61,6 +63,42 @@ footer a {
 footer a:hover {
     color: #fa734e;
 }
+
+#copy {
+    background-color: white;
+    color: #343a40;
+    width: 100%;
+}
+
+.card-sala {
+    position: relative;
+    overflow: hidden;
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s;
+    /* From https://css.glass */
+    /* From https://css.glass */
+    background: rgba(225, 155, 136, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.info:hover {
+    opacity: 1;
+
+}
+
+
 
 /* OSCURO */
 body.dark-mode {
@@ -92,6 +130,26 @@ body.dark-mode #horaFecha {
     color: #fff;
 }
 
+body.dark-mode footer {
+    color: #343a40;
+}
+
+body.dark-mode #copy {
+    background-color: #343a40;
+    color: white;
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: #343a40;
+}
+
+body.dark-mode .dropdown-menu .dropdown-item {
+    color: white;
+}
+
+body.dark-mode .drop .dropdown-item:hover {
+    color: black;
+}
 
 /* CLARO */
 .nav-link {

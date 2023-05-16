@@ -56,6 +56,8 @@ main {
     margin-left: 10px;
 }
 
+
+
 /* OSCURO */
 body.dark-mode .card-body {
     background-color: #292c30;

@@ -67,7 +67,7 @@ main i {
 
 
 /* OSCURO */
-body.dark-mode a {
+body.dark-mode #info-contacto a {
     color: #ffffff;
 }
 

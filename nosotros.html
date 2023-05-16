@@ -53,10 +53,9 @@
                             Clases
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Yoga Inicial</a></li>
-                            <li><a class="dropdown-item" href="#">Yoga Hatha</a></li>
-                            <li><a class="dropdown-item" href="#">Yoga al despertar</a></li>
-                            <li><a class="dropdown-item" href="#">Yoga Online</a></li>
+                            <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                            <li><a class="dropdown-item" href="yinYoga.html">Yin Yoga</a></li>
+                            <li><a class="dropdown-item" href="yogaRestaurativo.html">Yoga Restaurativo</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -77,72 +76,106 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                        <div class="card-body">
-                            <!-- <h1 class="card-title text-center">Mapa YogaYoga</h1> -->
-                                <script
-                                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq8JoUNAtJhtkZ3_2sWTsxBGbS6TM1zoM&callback=initMap"
-                                    defer>
-                                </script>
-                                <script src="./assets/js/nosotros.js">
-                                </script>
-                        </div>
+                    <div class="card-body">
+                        <!-- <h1 class="card-title text-center">Mapa YogaYoga</h1> -->
+                        <script
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq8JoUNAtJhtkZ3_2sWTsxBGbS6TM1zoM&callback=initMap"
+                            defer>
+                            </script>
+                        <script src="./assets/js/nosotros.js">
+                        </script>
+                    </div>
                 </div>
             </div>
-        <div>
+            <div>
     </main>
-<div class="container row p-5">
-    <div class="contenido col-6">
-        <h1>Nosotros YogaYoga</h1>
-        <p>Bienvenidos a nuestra página web de la Escuela de Yoga Armonía. Somos un equipo apasionado por el yoga y estamos comprometidos en compartir nuestros conocimientos y experiencias para ayudarte a encontrar la armonía física, mental y espiritual a través de esta práctica ancestral. <br><br>
+    <div class="container row p-5">
+        <div class="contenido col-6">
+            <h2>Nosotros YogaYoga</h2>
+            <p>Bienvenidos a nuestra página web de la Escuela de Yoga Armonía. Somos un equipo apasionado por el yoga y
+                estamos comprometidos en compartir nuestros conocimientos y experiencias para ayudarte a encontrar la
+                armonía física, mental y espiritual a través de esta práctica ancestral. <br><br>
 
-            Nuestro equipo está conformado por tres instructores dedicados y entusiastas:<br><br>
-            
-            Steffi Ryzer: Fundadora y Directora de la Escuela de Yoga Yoga. Steffi lleva más de 10 años practicando y enseñando yoga. Su enfoque se centra en la conexión mente-cuerpo y en la importancia de una respiración consciente durante la práctica.<br><br>
-            
-            Alejandro Peñailillo: Instructor certificado en diferentes estilos de yoga, incluyendo Hatha y Vinyasa. Su pasión por la filosofía del yoga y su habilidad para guiar a los estudiantes a través de asanas desafiantes hacen de sus clases una experiencia enriquecedora y fortalecedora.<br><br>
-            
-            Mariano Leal: Profesor de yoga y terapeuta holística. Con una formación en diferentes técnicas de sanación, Matiano combina sus conocimientos en anatomía y energía para ayudar a los estudiantes a equilibrar su cuerpo y mente, y a encontrar la paz interior.<br><br>
-            
-            Juntos, como equipo, nos comprometemos a crear un ambiente acogedor y seguro donde puedas explorar y crecer en tu práctica de yoga. Nos enfocamos en adaptar las clases a las necesidades individuales de nuestros estudiantes, brindando opciones modificadas y apoyo personalizado.<br><br>
-            
-            Te invitamos a explorar nuestra página web, conocer nuestros horarios de clases, talleres y retiros, y descubrir cómo puedes unirte a nuestra comunidad de yoga. Estamos aquí para guiarte en tu viaje hacia el bienestar y la serenidad.
-            
-            ¡Namaste!"</p>
+                Nuestro equipo está conformado por tres instructores dedicados y entusiastas:<br><br>
+
+                Steffi Ryzer: Fundadora y Directora de la Escuela de Yoga Yoga. Steffi lleva más de 10 años practicando
+                y enseñando yoga. Su enfoque se centra en la conexión mente-cuerpo y en la importancia de una
+                respiración consciente durante la práctica.<br><br>
+
+                Alejandro Peñailillo: Instructor certificado en diferentes estilos de yoga, incluyendo Hatha y Vinyasa.
+                Su pasión por la filosofía del yoga y su habilidad para guiar a los estudiantes a través de asanas
+                desafiantes hacen de sus clases una experiencia enriquecedora y fortalecedora.<br><br>
+
+                Mariano Leal: Profesor de yoga y terapeuta holística. Con una formación en diferentes técnicas de
+                sanación, Matiano combina sus conocimientos en anatomía y energía para ayudar a los estudiantes a
+                equilibrar su cuerpo y mente, y a encontrar la paz interior.<br><br>
+
+                Juntos, como equipo, nos comprometemos a crear un ambiente acogedor y seguro donde puedas explorar y
+                crecer en tu práctica de yoga. Nos enfocamos en adaptar las clases a las necesidades individuales de
+                nuestros estudiantes, brindando opciones modificadas y apoyo personalizado.<br><br>
+
+                Te invitamos a explorar nuestra página web, conocer nuestros horarios de clases, talleres y retiros, y
+                descubrir cómo puedes unirte a nuestra comunidad de yoga. Estamos aquí para guiarte en tu viaje hacia el
+                bienestar y la serenidad.
+
+                ¡Namaste!"</p>
+        </div>
+        <div id="map" class="col">
+        </div>
     </div>
-    <div id="map" class="col">
-    </div>
-</div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"> </script>
 
-    <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-4">
+    <footer class="pt-5">
+        <section>
+            <div class="container">
+                <div class="row text-md-left">
+                    <div class="col-sm-3 pt-4">
+                        <img src="assets/img/LOGO2.svg" alt="Logo">
 
-                </div>
-                <div class="col-sm-4">
-                    <img src="assets/img/LOGO2.svg" alt="Logo Yoga Yoga">
-                </div>
-                <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-3 pb-5" id="nav-footer-item">
+                        <h5>Navegación</h5>
+                        <hr>
+                        <a href="index.html">Inicio</a>
 
-                </div>
-                <div class="col-sm-4">
+                        <a href="nosotros.html">Nosotros</a>
 
-                </div>
-                <div class="col-sm-4">
-                    <div>
-                        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
-                        <a href="https://youtube.com"><i class="bi bi-youtube"></i></a>
-                        <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                        <a href="yoga.html">Clases</a>
+
+                        <a href="sucursales.html">Sucursales</a>
+
+                        <a href="poses.html">Poses</a>
+
+                        <a href="contacto.html">Contacto</a>
+
+                    </div>
+                    <div class="col-sm-3" id="nav-footer-item">
+                        <h5>Contacto</h5>
+                        <hr>
+                        <a href="mailto:contacto@yogayoga.cl">contacto@yogayoga.cl</a>
+                        <a href="tel:+56914702581">+56 9 1470 2581</a>
+                        <p> Av. Vicuña Mackenna 4917, San Joaquín, Región Metropolitana</p>
+
+                    </div>
+                    <div class="col-sm-3 nav-footer-item pb-3">
+                        <h5 class="pb-2">Redes sociales</h5>
+                        <hr>
+                        <div id="redes">
+                            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-
-                </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div class="container-fluid text-center pt-3" id="copy">
+                <p> Copyright © 2023 Yoga Yoga | Diseñado por: Gamero - Kraviz - Sarten</p>
+            </div>
+        </section>
     </footer>
 
     <script src="assets/js/main.js"></script>

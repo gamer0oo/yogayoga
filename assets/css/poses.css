@@ -1,3 +1,7 @@
+main {
+    margin-top: 150px;
+}
+
 .pose img {
     width: 200px;
 }
@@ -10,4 +14,9 @@
 
 .pose {
     text-align: center;
+}
+
+.pose span {
+    font-weight: bold;
+    color: #e19b88;
 }
