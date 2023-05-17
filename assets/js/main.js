@@ -2,18 +2,42 @@ const themeToggle = document.querySelector('#theme-toggle');
 const body = document.querySelector('body');
 
 themeToggle.addEventListener('click', () => {
+    
+
     body.classList.toggle('dark-mode');
 
     if (body.classList.contains('dark-mode')) {
+        localStorage.setItem("dark-mode", "true")
         themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
         $('#superior').removeClass('bg-light');
         $('#superior').addClass('bg-dark');
     } else {
+        localStorage.setItem("dark-mode", "false")
         themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
         $('#superior').removeClass('bg-dark');
         $('#superior').addClass('bg-light');
     }
 });
+
+if (localStorage.getItem("dark-mode") === null || undefined){
+    localStorage.setItem("dark-mode", 'falso')
+}
+
+window.addEventListener('DOMContentLoaded', function(){
+    if (localStorage.getItem("dark-mode") === 'true') {
+        body.classList.add('dark-mode')
+        themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+        $('#superior').removeClass('bg-light');
+        $('#superior').addClass('bg-dark');
+        console.log(localStorage.getItem("dark-mode"))
+    } else {
+        body.classList.remove('dark-mode')
+        themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+        $('#superior').removeClass('bg-dark');
+        $('#superior').addClass('bg-light');
+        console.log(localStorage.getItem("dark-mode"))  
+    }
+})
 
 // HORA
 function mostrarHoraActual() {
