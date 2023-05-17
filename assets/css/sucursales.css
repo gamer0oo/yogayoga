@@ -31,7 +31,7 @@ main {
     color: #e19b88
 }
 
-#card-img {
+.card-img {
     height: auto;
     width: 400x;
 }
@@ -46,6 +46,10 @@ main {
     color: #ffffff;
 }
 
+button a {
+    color: #ffffff;
+    text-decoration: none;
+}
 .card i {
     color: #e19b88;
     margin-right: 10px;
