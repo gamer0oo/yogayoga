@@ -16,7 +16,7 @@ main {
     color: black;
 }
 
-header img {
+nav img {
     width: 100px;
     height: auto;
 }
@@ -43,10 +43,14 @@ header img {
     padding-right: 200px;
 }
 
+
+
 .card-sala {
     position: relative;
     overflow: hidden;
 }
+
+
 
 .info {
     position: absolute;
@@ -63,7 +67,7 @@ header img {
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     color: rgb(0, 0, 0);
-    padding: 20px;
+    padding: 30px;
 }
 
 .info:hover {
@@ -71,14 +75,12 @@ header img {
 
 }
 
+
 footer {
     background-color: #f8cfc4;
 }
 
-footer img {
-    height: 130px;
-    width: auto;
-}
+
 
 footer i {
     font-size: 1.5rem;
@@ -100,6 +102,12 @@ footer a:hover {
     background-color: white;
     color: #343a40;
     width: 100%;
+}
+
+
+.navbar-toggler .navbar-toggler-icon {
+    color: red !important;
+    /* Cambia el color del ícono y asegura su aplicación */
 }
 
 
