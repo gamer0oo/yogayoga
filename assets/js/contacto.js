@@ -206,20 +206,21 @@ function password() {
     }
 }
 
-var map
+let map;
+let marker;
+
 function initMap() {
-    macc = { lat: -33.500216, lng: -70.615721 }
-<<<<<<< HEAD
-    map = new google.maps.Map(document.getElementById("map"), {zoom: 17, center: macc});
-    market = new google.maps.Maker({position: macc, map: map});
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(displayMap)
+    }
+    function displayMap(position) {
+        macc = { lat: position.coords.latitude, lng: position.coords.longitude }
+        map = new google.maps.Map(document.getElementById("map"), {zoom: 17, center: macc});
+        marker = new google.maps.Marker({position: macc, map: map});
+    }
+   
 }
 
 initMap()
-=======
-    map = new google.maps.Map(document.getElementById("map"), { zoom: 17, center: macc });
-    marker = new google.maps.Marker({ position: macc, map: map });
-}
 
-initMap()
 
->>>>>>> 52c10347c1d5f8884296779fa350c31447025b14
