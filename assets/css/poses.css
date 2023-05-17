@@ -13,21 +13,26 @@ main {
     overflow: hidden;
 }
 
-.pose {
+.poses {
+    position: relative;
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
+
+
 .pose span {
+    font-size: 25px;
     font-weight: bold;
     color: #e19b88;
 }
 
 .pose {
     transition: transform 0.3s;
-    /* Agrega una transición suave al cambio de tamaño */
 }
 
 .pose:hover {
-    transform: scale(1.2);
-    /* Ajusta el valor según el nivel de agrandamiento deseado */
+    transform: scale(1.1);
+
 }

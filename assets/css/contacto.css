@@ -1,5 +1,5 @@
 main {
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .color-titulo {
@@ -38,7 +38,7 @@ main {
     color: #ffffff;
 }
 
-h2 {
+main h2 {
     color: #e19b88;
 }
 

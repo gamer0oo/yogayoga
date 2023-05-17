@@ -1,0 +1,35 @@
+main {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#agendar-btn {
+    background-color: white;
+    color: #fa734e;
+    border-radius: 30px;
+}
+
+
+.info-clases {
+    background-color: #e19b88;
+    border-radius: 30px;
+    width: 300px;
+}
+
+.info-clases span {
+    font-weight: bold;
+}
+
+h2 span {
+    color: #e19b88;
+}
+
+/* OSCURO */
+body.dark-mode .info-clases {
+    color: #333;
+}
+
+body.dark-mode #agendar-btn {
+    background-color: #6e6e6e;
+    color: white;
+}
