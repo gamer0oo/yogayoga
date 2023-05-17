@@ -10,6 +10,7 @@ main {
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
+    overflow: hidden;
 }
 
 .pose {
@@ -19,4 +20,14 @@ main {
 .pose span {
     font-weight: bold;
     color: #e19b88;
+}
+
+.pose {
+    transition: transform 0.3s;
+    /* Agrega una transición suave al cambio de tamaño */
+}
+
+.pose:hover {
+    transform: scale(1.2);
+    /* Ajusta el valor según el nivel de agrandamiento deseado */
 }
