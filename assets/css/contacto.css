@@ -74,3 +74,8 @@ body.dark-mode #info-contacto a {
 body.dark-mode a:hover {
     color: #e19b88;
 }
+
+#map {
+    width: 30vw;
+    height: 30vh;
+}
