@@ -1,12 +1,42 @@
 main {
-    margin-top: 300px;
+    margin-top: 180px;
+}
+
+
+span {
+    color: #fa734e;
+}
+
+
+.card-integrantes {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
 }
 
 
 
-html,
-body {
+.info {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s;
+    background: rgba(225, 155, 136, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+}
+
+.info:hover {
+    opacity: 1;
+
+}
+
+.custom-border {
+    border: 5px solid #f8cfc4;
 }
