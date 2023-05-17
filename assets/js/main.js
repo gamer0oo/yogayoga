@@ -1,3 +1,4 @@
+// OSCURO
 const themeToggle = document.querySelector('#theme-toggle');
 const body = document.querySelector('body');
 

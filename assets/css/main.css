@@ -183,6 +183,14 @@ body.dark-mode .drop .dropdown-item:hover {
     color: black;
 }
 
+body.dark-mode .nav-link {
+    color: white;
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(100%) sepia(100%) saturate(0) hue-rotate(108deg);
+}
+
 /* CLARO */
 .nav-link {
     color: #343a40;
