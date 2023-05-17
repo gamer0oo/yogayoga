@@ -22,14 +22,18 @@ t
         <header>
             <div class="container">
                 <div class="row text-center mt-2 mb-2 d-flex justify-content-center">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 p-2">
                         <button id="theme-toggle" class="btn"><i class="bi bi-moon-fill"></i></button>
                     </div>
                     <div class="col-sm-4">
-                        <h1 class="clima">clima</h1>
+                        <div class="d-flex justify-content-center clima">
+                            <h1 class="p-2" id="temperatura-valor"></h1>
+                            <h2 class="p-2" id="ubicacion"></h2>
+                            <img class="pl-2 pr-2" id="icono-animado" src="" alt="Icono del clima">
+                        </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="xmt-3">
+                        <div class="p-2">
                             <span id="horaFecha" class="ms-3 small"></span>
                         </div>
                     </div>
@@ -38,7 +42,7 @@ t
         </header>
 
         <!-- NAVEGACIÓN -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class=" navbar navbar-expand-lg">
             <div class="container">
                 <button id="botonNav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -66,7 +70,8 @@ t
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
                                 <li><a class="dropdown-item" href="yinYoga.html">Yin Yoga</a></li>
-                                <li><a class="dropdown-item" href="yogaRestaurativo.html">Yoga Restaurativo</a></li>
+                                <li><a class="dropdown-item" href="yogaFuncional.html">Yoga
+                                        Restaurativo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">

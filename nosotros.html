@@ -21,57 +21,72 @@
         <header>
             <div class="container">
                 <div class="row text-center mt-2 mb-2 d-flex justify-content-center">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 p-2">
                         <button id="theme-toggle" class="btn"><i class="bi bi-moon-fill"></i></button>
                     </div>
                     <div class="col-sm-4">
-                        <img src="assets/img/LOGO2.svg" alt="Logo Yoga Yoga">
+                        <div class="d-flex justify-content-center clima">
+                            <h1 class="p-2" id="temperatura-valor"></h1>
+                            <h2 class="p-2" id="ubicacion"></h2>
+                            <img class="pl-2 pr-2" id="icono-animado" src="" alt="Icono del clima">
+                        </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="text-end mt-3">
+                        <div class="p-2">
                             <span id="horaFecha" class="ms-3 small"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Clases
+
+        <!-- NAVEGACIÓN -->
+        <nav class=" navbar navbar-expand-lg">
+            <div class="container">
+                <button id="botonNav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/LOGO2.svg" alt="Logo Yoga Yoga">
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
-                            <li><a class="dropdown-item" href="yinYoga.html">Yin Yoga</a></li>
-                            <li><a class="dropdown-item" href="yogaRestaurativo.html">Yoga Restaurativo</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sucursales.html">Sucursales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="poses.html">Poses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                    </div>
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                                <li><a class="dropdown-item" href="yinYoga.html">Yin Yoga</a></li>
+                                <li><a class="dropdown-item" href="yogaFuncional.html">Yoga
+                                        Restaurativo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="poses.html">Poses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </nav>
-
     </div>
     <main>
         <div class="container-fluid">
@@ -79,12 +94,14 @@
                 <div class="col-12">
                     <div class="card-body">
                         <!-- <h1 class="card-title text-center">Mapa YogaYoga</h1> -->
-                        <script
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq8JoUNAtJhtkZ3_2sWTsxBGbS6TM1zoM&callback=initMap"
-                            defer>
-                            </script>
-                        <script src="./assets/js/nosotros.js">
-                        </script>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card-body">
+                                    <!-- <h1 class="card-title text-center">Mapa YogaYoga</h1> -->
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,8 +149,7 @@
 
                             ¡Namaste!"</p>
                     </div>
-                    <div id="map" class="col">
-                    </div>
+
                 </div>
     </main>
 
@@ -190,7 +206,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/nosotros.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

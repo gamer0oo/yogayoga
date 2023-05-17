@@ -22,58 +22,72 @@ t
         <header>
             <div class="container">
                 <div class="row text-center mt-2 mb-2 d-flex justify-content-center">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 p-2">
                         <button id="theme-toggle" class="btn"><i class="bi bi-moon-fill"></i></button>
                     </div>
                     <div class="col-sm-4">
-                        <img src="assets/img/LOGO2.svg" alt="Logo Yoga Yoga">
+                        <div class="d-flex justify-content-center clima">
+                            <h1 class="p-2" id="temperatura-valor"></h1>
+                            <h2 class="p-2" id="ubicacion"></h2>
+                            <img class="pl-2 pr-2" id="icono-animado" src="" alt="Icono del clima">
+                        </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="text-end mt-3">
+                        <div class="p-2">
                             <span id="horaFecha" class="ms-3 small"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Clases
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
-                            <li><a class="dropdown-item" href="yinYoga.html">Yin Yoga</a></li>
-                            <li><a class="dropdown-item" href="yogaRestaurativo.html">Yoga Restaurativo</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sucursales.html">Sucursales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="poses.html">Poses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
 
-                </ul>
+        <!-- NAVEGACIÓN -->
+        <nav class=" navbar navbar-expand-lg">
+            <div class="container">
+                <button id="botonNav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/LOGO2.svg" alt="Logo Yoga Yoga">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                                <li><a class="dropdown-item" href="yinYoga.html">Yin Yoga</a></li>
+                                <li><a class="dropdown-item" href="yogaFuncional.html">Yoga
+                                        Restaurativo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="poses.html">Poses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </nav>
-
     </div>
     <main>
         <section class="text-center p-3">

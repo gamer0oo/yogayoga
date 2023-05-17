@@ -1,6 +1,6 @@
 /* MAIN */
 main {
-    margin-top: 130px;
+    margin-top: 120px;
     margin-bottom: 50px;
 }
 
@@ -26,8 +26,20 @@ main {
     font-size: 1rem;
 }
 
-.clima {
+
+
+.clima #temperatura-valor {
     font-size: 1rem;
+}
+
+.clima #ubicacion {
+    font-size: 1rem;
+}
+
+
+.clima img {
+    height: 3rem;
+    width: auto;
 }
 
 /* NAV */
