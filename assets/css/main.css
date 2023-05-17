@@ -4,6 +4,7 @@ main {
     margin-bottom: 50px;
 }
 
+/* HEADER */
 .fixed-top {
     position: fixed;
     top: 0;
@@ -12,41 +13,50 @@ main {
 }
 
 #horaFecha {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
 }
 
-header img {
+
+#theme-toggle {
+    font-size: 1rem;
+}
+
+#theme-toggle i {
+    font-size: 1rem;
+}
+
+.clima {
+    font-size: 1rem;
+}
+
+/* NAV */
+nav img {
     width: 100px;
     height: auto;
 }
 
-#theme-toggle {
-    font-size: 2rem;
-}
 
-#theme-toggle i {
-    font-size: 1.5rem;
-}
-
+/* MAIN */
 .carousel img {
     height: 600px;
 }
 
-#nav-footer-item {
-    display: flex;
-    flex-direction: column;
-}
+
 
 #text {
     padding-left: 200px;
     padding-right: 200px;
 }
 
+
+
 .card-sala {
     position: relative;
     overflow: hidden;
 }
+
+
 
 .info {
     position: absolute;
@@ -63,7 +73,7 @@ header img {
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     color: rgb(0, 0, 0);
-    padding: 20px;
+    padding: 30px;
 }
 
 .info:hover {
@@ -71,14 +81,17 @@ header img {
 
 }
 
+/* FOOTER */
+#nav-footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background-color: #f8cfc4;
 }
 
-footer img {
-    height: 130px;
-    width: auto;
-}
+
 
 footer i {
     font-size: 1.5rem;
@@ -101,6 +114,7 @@ footer a:hover {
     color: #343a40;
     width: 100%;
 }
+
 
 
 
