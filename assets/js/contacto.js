@@ -40,6 +40,12 @@ function validarFormulario(e) {
     } else {
         $("#error7").css("display", "none");
     }
+    if (contraseña2.value == "") {
+        $("#error12").css("display", "block");
+        hayErrores = true;
+    } else {
+        $("#error12").css("display", "none");
+    }
 
     if (nombre.value == "") {
         $("#error").css("display", "block");
@@ -117,7 +123,7 @@ comentarios.addEventListener("input", function () {
         $("#error11").css("display", "none");
     }
     if (palabras.length > maxPalabras || palabras.length < 0) {
-        palabrasRestantes.style.color = "red";
+        palabrasRestantes.style.color = "";
     } else {
         palabrasRestantes.style.color = "inherit";
     }
@@ -133,6 +139,10 @@ contraseña.addEventListener("input", function () {
 
 contraseña2.addEventListener("input", function () {
     $("#error9").css("display", "none");
+});
+
+contraseña2.addEventListener("input", function () {
+    $("#error12").css("display", "none");
 });
 
 nombre.addEventListener("input", function () {

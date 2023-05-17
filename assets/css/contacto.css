@@ -25,7 +25,8 @@ main {
 
 #error9,
 #error10,
-#error11 {
+#error11,
+#error12 {
     color: red;
     display: none;
     font-size: 10px;
@@ -64,6 +65,9 @@ main i {
     margin: 5px;
 }
 
+#palabrasRestantes {
+    color: red;
+}
 
 
 /* OSCURO */
@@ -78,4 +82,30 @@ body.dark-mode a:hover {
 #map {
     width: 30vw;
     height: 30vh;
+}
+
+body.dark-mode #error,
+#error2,
+#error3,
+#error4,
+#error5,
+#error6,
+#error7,
+#error8 {
+    color: #ff7676;
+    display: none;
+    font-size: 13px;
+}
+
+body.dark-mode #error9,
+#error10,
+#error11 ,
+#error12{
+    color: #ff7676;
+    display: none;
+    font-size: 13px;
+}
+
+body.dark-mode #palabrasRestantes {
+    color: #ff7676;
 }
