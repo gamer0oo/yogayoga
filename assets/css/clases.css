@@ -20,9 +20,7 @@ main {
     font-weight: bold;
 }
 
-h2 span {
-    color: #e19b88;
-}
+
 
 /* OSCURO */
 body.dark-mode .info-clases {
