@@ -4,6 +4,7 @@ main {
     margin-bottom: 50px;
 }
 
+/* HEADER */
 .fixed-top {
     position: fixed;
     top: 0;
@@ -12,31 +13,36 @@ main {
 }
 
 #horaFecha {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
 }
 
+
+#theme-toggle {
+    font-size: 1rem;
+}
+
+#theme-toggle i {
+    font-size: 1rem;
+}
+
+.clima {
+    font-size: 1rem;
+}
+
+/* NAV */
 nav img {
     width: 100px;
     height: auto;
 }
 
-#theme-toggle {
-    font-size: 2rem;
-}
 
-#theme-toggle i {
-    font-size: 1.5rem;
-}
-
+/* MAIN */
 .carousel img {
     height: 600px;
 }
 
-#nav-footer-item {
-    display: flex;
-    flex-direction: column;
-}
+
 
 #text {
     padding-left: 200px;
@@ -75,6 +81,11 @@ nav img {
 
 }
 
+/* FOOTER */
+#nav-footer-item {
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
     background-color: #f8cfc4;
@@ -104,11 +115,6 @@ footer a:hover {
     width: 100%;
 }
 
-
-.navbar-toggler .navbar-toggler-icon {
-    color: red !important;
-    /* Cambia el color del ícono y asegura su aplicación */
-}
 
 
 

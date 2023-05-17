@@ -15,7 +15,6 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-
 function mostrarHoraActual() {
     var fecha = new Date();
     var opcionesHora = { hour12: false, hour: '2-digit', minute: '2-digit' };
