@@ -17,14 +17,14 @@ window.addEventListener('load', ()=> {
             lon = posicion.coords.longitude
             lat = posicion.coords.latitude
 
-            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=346eaf756ea45ecf3807540f35f62625`
+            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=346eaf756ea45ecf3807540f35f62625&units=metric`
 
             // console.log(url)
 
             fetch(url)
                 .then ( response => { return response.json() })
                 .then ( data => {
-                    let temp = Math.round(((((Math.round(data.main.temp))-32)*5)/9))
+                    let temp = Math.round(data.main.temp)
                     temperaturaValor.textContent = `${temp} °C`
                     let desc = data.weather[0].description
                     temperaturaDescripcion.textContent = desc.toUpperCase()
