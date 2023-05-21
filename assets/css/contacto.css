@@ -20,7 +20,7 @@ main {
 #error8 {
     color: red;
     display: none;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 #error9,
@@ -29,7 +29,7 @@ main {
 #error12 {
     color: red;
     display: none;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 
@@ -99,8 +99,8 @@ body.dark-mode #error,
 
 body.dark-mode #error9,
 #error10,
-#error11 ,
-#error12{
+#error11,
+#error12 {
     color: #ff7676;
     display: none;
     font-size: 13px;
