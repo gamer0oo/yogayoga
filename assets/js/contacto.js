@@ -13,19 +13,49 @@ let comentarios = document.getElementById("comentInput");
 let palabrasRestantes = document.getElementById("palabrasRestantes");
 let maxPalabras = 100;
 
+function validarRut(rut) {
+    rut = rut.replace(/[^0-9kK]/g, ''); // Eliminar todos los caracteres excepto números y la letra 'k' en caso de ser verificador
+  
+    if (rut.length < 2) {
+      return false;
+    }
+  
+    var dv = rut.charAt(rut.length - 1); // Último dígito o letra verificadora
+    var rutNumerico = parseInt(rut.slice(0, -1)); // Convertir a número el RUT sin el dígito verificador
+  
+    if (isNaN(rutNumerico)) {
+      return false;
+    }
+  
+    var suma = 0;
+    var factor = 2;
+  
+    // Calcular la suma ponderada de los dígitos del RUT
+    for (var i = rutNumerico.toString().length - 1; i >= 0; i--) {
+      suma += parseInt(rutNumerico.toString().charAt(i)) * factor;
+      factor = factor === 7 ? 2 : factor + 1;
+    }
+  
+    var dvEsperado = 11 - (suma % 11); // Calcular el dígito verificador esperado
+    dvEsperado = dvEsperado === 11 ? 0 : dvEsperado === 10 ? 'K' : dvEsperado.toString(); // Si el dígito verificador esperado es 11, se convierte a 0, si es 10, se convierte a 'K'
+  
+    return dv.toString().toUpperCase() === dvEsperado; // Comparar el dígito verificador ingresado con el esperado (ignorar mayúsculas/minúsculas)
+  }
+
 boton.addEventListener("click", validarFormulario);
+
 
 function validarFormulario(e) {
     e.preventDefault();
 
     let hayErrores = false;
 
-    if (rut.value.length < 8 || rut.value.length > 9) {
+    if (!validarRut(rut.value)) {
         $("#error8").css("display", "block");
         hayErrores = true;
-    } else {
+      } else {
         $("#error8").css("display", "none");
-    }
+      }
 
     if (contraseña.value == "" || contraseña.value.length <= 7) {
         $("#error6").css("display", "block");
