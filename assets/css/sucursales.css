@@ -1,7 +1,9 @@
 /*  main */
 main {
-    margin-top: 150px;
+    margin-top: 180px;
 }
+
+
 
 #btn-modal {
     background: #e19b88;
@@ -50,6 +52,7 @@ button a {
     color: #ffffff;
     text-decoration: none;
 }
+
 .card i {
     color: #e19b88;
     margin-right: 10px;
@@ -76,4 +79,8 @@ body.dark-mode .card-border {
 
 body.dark-mode .modal-content {
     background-color: #292c30;
+}
+
+body.dark-mode .card-text {
+    color: #ffffff;
 }

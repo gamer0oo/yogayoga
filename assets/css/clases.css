@@ -1,5 +1,5 @@
 main {
-    margin-top: 150px;
+    margin-top: 190px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -21,6 +21,9 @@ main {
     font-weight: bold;
 }
 
+.desc span {
+    color: #e19b88;
+}
 
 
 /* OSCURO */
@@ -29,6 +32,6 @@ body.dark-mode .info-clases {
 }
 
 body.dark-mode #agendar-btn {
-    background-color: #6e6e6e;
+    background-color: #343a40;
     color: white;
 }
