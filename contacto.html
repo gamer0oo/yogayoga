@@ -93,6 +93,7 @@
     <main>
         <div class="container">
             <div class="row">
+                <!-- FORMULARIO -->
                 <section class="col-sm-8 mb-4">
                     <form class="border p-3 col-md-10">
                         <h2>Formulario de Contacto</h2>
@@ -102,8 +103,7 @@
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="rutInput" class="form-label">Rut</label>
-                                    <input type="text" class="form-control" id="rutInput"
-                                        placeholder="Ingrese su rut sin guion ni puntos">
+                                    <input type="text" class="form-control" id="rutInput" placeholder="Ingrese su rut">
                                     <p class="error" id="error8">* Rut invalido</p>
                                 </div>
                             </div>
@@ -123,7 +123,6 @@
                                     <label for="psw2Input" class="form-label">Repita su contraseña</label>
                                     <input type="password" class="form-control" id="psw2Input"
                                         placeholder="Escribala nuevamente">
-                                        <p class="error" id="error12">* Debe contener al menos 8 caracteres  </p>
                                     <p class="error" id="error7">* Sus contraseñas no coinciden</p>
                                 </div>
                             </div>
@@ -173,7 +172,7 @@
                                         placeholder="Calle, Comuna, Ciudad">
                                     <p class="error" id="error5">* Debes ingresar una direccion</p>
                                 </div>
-                            </div>  
+                            </div>
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="asunInput" class="form-label">Asunto</label>
@@ -196,6 +195,7 @@
                         </div>
                     </form>
                 </section>
+                <!-- INFO CONTACTO -->
                 <section class="col-sm-4 mt-5 sm-2">
                     <h2>Información de Contacto</h2>
                     <ul id="info-contacto">
@@ -218,14 +218,11 @@
                             <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
                         </li>
                     </ul>
-                    
                     <div id="map" class="col"></div>
                     <script
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq8JoUNAtJhtkZ3_2sWTsxBGbS6TM1zoM&callback=initMap"
                         defer>
                         </script>
-
-
                 </section>
             </div>
         </div>
@@ -255,33 +252,25 @@
                 <div class="row text-md-left">
                     <div class="col-sm-3 pt-4">
                         <img src="assets/img/LOGO2.svg" alt="Logo" class="img-fluid pb-10">
-
                     </div>
                     <div class="col-sm-3 pb-5 nav-footer-item">
                         <h5>Navegación</h5>
                         <hr>
                         <a href="index.html">Inicio</a>
-
                         <a href="nosotros.html">Nosotros</a>
-
                         <a href="yoga.html">Clases</a>
-
                         <a href="sucursales.html">Sucursales</a>
-
                         <a href="poses.html">Poses</a>
-
                         <a href="contacto.html">Contacto</a>
-
                     </div>
-                    <div class="col-sm-3 nav-footer-item">
+                    <div class="col-sm-3 pb-5 nav-footer-item">
                         <h5>Contacto</h5>
                         <hr>
                         <a href="mailto:contacto@yogayoga.cl">contacto@yogayoga.cl</a>
                         <a href="tel:+56914702581">+56 9 1470 2581</a>
-                        <p> Av. Vicuña Mackenna 4917, San Joaquín, Región Metropolitana</p>
-
+                        <a href="contacto.html">Av. Vicuña Mackenna 4917, San Joaquín, Región Metropolitana</a>
                     </div>
-                    <div class="col-sm-3 nav-footer-item pb-3">
+                    <div class="col-sm-3 pb-5 nav-footer-item">
                         <h5 class="pb-2">Redes sociales</h5>
                         <hr>
                         <div id="redes">
@@ -305,9 +294,10 @@
     <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
