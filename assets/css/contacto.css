@@ -18,7 +18,7 @@ main {
 #error6,
 #error7,
 #error8 {
-    color: red;
+    color: #ff7676;
     display: none;
     font-size: 13px;
 }
@@ -27,7 +27,7 @@ main {
 #error10,
 #error11,
 #error12 {
-    color: red;
+    color: #ff7676;
     display: none;
     font-size: 13px;
 }
@@ -66,7 +66,43 @@ main i {
 }
 
 #palabrasRestantes {
-    color: red;
+    color: #ff7676;
+}
+
+.custom-button {
+    background-color: #e19b88;
+    border-radius: 0;
+}
+
+.custom-button i {
+    color: white;
+}
+
+.custom-button:hover {
+    background-color: #e19b88;
+}
+
+.custom-button2 {
+    background-color: #e19b88;
+    border-radius: 0;
+}
+
+.custom-button2 i {
+    color: white;
+}
+
+.custom-button2:hover {
+    background-color: #e19b88;
+}
+
+.modal-footer button {
+    background: #e19b88;
+    color: #ffffff;
+}
+
+.modal-footer button:hover {
+    background: #e19b88;
+    color: #ffffff;
 }
 
 
@@ -108,4 +144,28 @@ body.dark-mode #error9,
 
 body.dark-mode #palabrasRestantes {
     color: #ff7676;
+}
+
+body.dark-mode .modal-content {
+    background-color: #292c30;
+}
+
+body.dark-mode input {
+    border-color: #292c30;
+    color: white;
+    background-color: #212529;
+}
+
+body.dark-mode input::placeholder {
+    color: #61666d;
+}
+
+body.dark-mode input:focus {
+    background-color: #212529;
+    color: #939aa0;
+}
+
+body.dark-mode textarea {
+    background-color: #212529;
+    border-color: #292c30;
 }

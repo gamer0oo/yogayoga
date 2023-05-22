@@ -79,7 +79,6 @@ nav img {
     opacity: 0;
     transition: opacity 0.8s;
     /* From https://css.glass */
-    /* From https://css.glass */
     background: rgba(225, 155, 136, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);

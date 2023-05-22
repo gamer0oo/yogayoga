@@ -54,6 +54,28 @@ function validarRut(rut) {
     return dv.toString().toUpperCase() === dvEsperado; // Comparar el dígito verificador ingresado con el esperado (ignorar mayúsculas/minúsculas)
 }
 
+function verPassword() {
+    const icon = document.getElementById("pswIcon");
+    if (contraseña.type === 'password') {
+        contraseña.type = 'text';
+        icon.classList = 'bi bi-eye-slash';
+    } else {
+        contraseña.type = 'password';
+        icon.classList = 'bi bi-eye';
+    }
+}
+function verPassword2() {
+    const icon2 = document.getElementById("pswIcon2");
+    if (contraseña2.type === 'password') {
+        contraseña2.type = 'text';
+        icon2.classList = 'bi bi-eye-slash';
+    } else {
+        contraseña2.type = 'password';
+        icon2.classList = 'bi bi-eye';
+    }
+}
+
+
 
 boton.addEventListener("click", validarFormulario);
 
